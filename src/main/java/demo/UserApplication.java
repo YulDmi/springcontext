@@ -8,5 +8,6 @@ public class UserApplication {
 
         UserRepository userRepository = context.getBean("userRepository", UserRepository.class);
         userRepository.printUsers();
+        context.close();
     }
 }
